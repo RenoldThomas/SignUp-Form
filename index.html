@@ -22,7 +22,34 @@
             <div>You <em>know</em> you want to.</div>
         </div>
         <div class="signupform"> 
-            
+            <h3>Let's do this!</h3>
+            <form action="" method="get">
+                <div class="left-form">
+                    <label for="first_name">FIRST NAME</label><br>
+                    <input type="text" name="first_name" id="first_name">
+                    <br>
+                    
+                    <label for="email">EMAIL</label><br>
+                    <input type="email" name="email" id="email">
+                    <br>
+
+                    <label for="password">PASSWORD</label><br>
+                    <input type="password" name="password" id="password" required>
+                </div>
+                <div class="right-form">
+                    <label for="last_name">LAST NAME</label><br>
+                    <input type="text" name="last_name" id="last_name">
+                    <br>
+                    
+                    <label for="phonenumber">PHONE NUMBER</label><br>
+                    <input type="text" name="phonenumber" id="phonenumber" placeholder="XXX-XXX-XXXX" pattern="\d{3}-?\d{3}-?\d{4}" required>
+                    <br>
+
+                    <label for="confirm">CONFIRM PASSWORD</label><br>
+                    <input type="password" name="confirm" id="confirm" required>
+                </div>
+                                
+            </form>
         </div>
         <div class="createaccountsection">
             <button type="button">Create Account</button>

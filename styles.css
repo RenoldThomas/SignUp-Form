@@ -6,6 +6,7 @@
 body {
     margin: 0px;
     display: flex;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .left-section-container {
@@ -57,4 +58,42 @@ h1 {
     font-size: 24px;
     font-weight: 600;
     max-width: 80%;
+}
+
+.signupform {
+    width: 100vh;
+}
+
+form {
+    display: flex;
+}
+
+.left-form {
+    margin-right: 64px;
+}
+
+label {
+    font-size: 12px;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+input {
+    margin-bottom: 16px;
+    width: 200px;
+    height: 20px;
+    border-radius: 3px;
+    border-style: solid;
+    border-color: #EFF0F3;
+}
+
+#password:invalid {
+    border: 2px solid red;
+}
+#confirm:invalid {
+    border: 2px solid red;
+}
+
+#phonenumber:invalid {
+    border: 2px solid red;
 }
