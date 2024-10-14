@@ -87,6 +87,10 @@ input {
     border-color: #EFF0F3;
 }
 
+input:focus {
+    box-shadow: 2px 2px lightgray;
+}
+
 #password:invalid {
     border: 2px solid red;
 }
