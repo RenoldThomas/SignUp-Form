@@ -1,29 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Standard meta tags for character encoding and responsive behavior -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link to external stylesheet -->
     <link rel="stylesheet" href="styles.css">
     <title>Sign-up Form</title>
 </head>
 <body>
+    <!-- Left section with background image and branding -->
     <div class="left-section-container">
-        <div class="odin-title"> <!--display flex so that the img and header are side by side-->
+        <!-- Logo and title container with flexbox alignment -->
+        <div class="odin-title">
             <img src="odin-lined.png" alt="Odin Logo Outline">
             <h1>Odin</h1>
         </div>
+        <!-- Photo attribution text positioned at the bottom -->
         <p id="credits">Photo by Halie West on Unsplash</p>
     </div>
 
+    <!-- Main content area containing intro text and form -->
     <div class="main-content">
+        <!-- Introduction section with emphasized text -->
         <div class="topsection">
             <div>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up <em>now</em> to get started.</div>
             <br>
             <div>You <em>know</em> you want to.</div>
         </div>
+        
+        <!-- Form container with title and input fields -->
         <div class="signupform"> 
             <h3>Let's do this!</h3>
+            <!-- Form element with GET method (should be changed to POST for production) -->
             <form action="" method="get">
+                <!-- Left column of form fields -->
                 <div class="left-form">
                     <label for="first_name">FIRST NAME</label><br>
                     <input type="text" name="first_name" id="first_name">
@@ -34,28 +45,35 @@
                     <br>
 
                     <label for="password">PASSWORD</label><br>
+                    <!-- Password field with required attribute for validation -->
                     <input type="password" name="password" id="password" required>
                 </div>
+                
+                <!-- Right column of form fields -->
                 <div class="right-form">
                     <label for="last_name">LAST NAME</label><br>
                     <input type="text" name="last_name" id="last_name">
                     <br>
                     
                     <label for="phonenumber">PHONE NUMBER</label><br>
+                    <!-- Phone number field with pattern validation for XXX-XXX-XXXX format -->
                     <input type="text" name="phonenumber" id="phonenumber" placeholder="XXX-XXX-XXXX" pattern="\d{3}-?\d{3}-?\d{4}" required>
                     <br>
 
                     <label for="confirm">CONFIRM PASSWORD</label><br>
+                    <!-- Confirm password field (should have JS validation to match password) -->
                     <input type="password" name="confirm" id="confirm" required>
-                </div>
-                                
+                </div>                
             </form>
         </div>
+        
+        <!-- Form submission and login link section -->
         <div class="createaccountsection">
+            <!-- Submit button (note: requires JS to actually submit the form) -->
             <button type="button" id="createButton">Create Account</button>
+            <!-- Login alternative with link -->
             <p id="login">Already have an account? <a href="#">Log in</a></p>
         </div>
     </div>
-    
 </body>
 </html>

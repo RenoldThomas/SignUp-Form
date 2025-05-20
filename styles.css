@@ -1,120 +1,141 @@
+/* Import custom Norse font for the brand header */
 @font-face {
     font-family: Norse;
     src: url('Norse-Bold.otf');
 }
 
+/* Reset default margin and set up base document layout */
 body {
     margin: 0px;
-    display: flex;
+    display: flex; /* Creates horizontal split layout */
     font-family: Arial, Helvetica, sans-serif;
 }
 
+/* Left sidebar with background image styling */
 .left-section-container {
     background-image: url(starrynight.jpg);
     background-position: center;
-    /* display: flex; */
-    height: 100vh;
+    /* display: flex; */ /* Commented out but could be used for additional layout */
+    height: 100vh; /* Full viewport height */
 }
 
+/* Container for the Odin logo and title */
 .odin-title {
-    transform: translateY(20vh);
+    transform: translateY(20vh); /* Position vertically */
     width: 30vw;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgba(255, 255, 255, 0.4);
+    background-color: rgba(255, 255, 255, 0.4); /* Semi-transparent background */
 }
 
+/* Logo image sizing */
 img {
     height: 8rem;
     width: auto;
 }
 
+/* Title styling with custom font */
 h1 {
     font-size: 4rem;
     color: white;
-    font-family: Norse;
+    font-family: Norse; /* Custom font defined in @font-face */
 }
 
+/* Photo credit positioning and styling */
 #credits {
     position: relative;
     text-align: center;
-    transform: translateY(36rem);
+    transform: translateY(36rem); /* Position at bottom of container */
     color: white;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 12px;
 }
 
+/* Main content area styling */
 .main-content {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     padding: 48px;
-    background-color:#F9FAFB;
+    background-color: #F9FAFB; /* Light gray background */
 }
 
+/* Introduction text styling */
 .topsection {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 24px;
     font-weight: 600;
-    max-width: 80%;
+    max-width: 80%; /* Prevent text from stretching too wide */
 }
 
+/* Form container width */
 .signupform {
     width: 100vh;
 }
 
+/* Set up form layout as horizontal columns */
 form {
     display: flex;
 }
 
+/* Left form column spacing */
 .left-form {
     margin-right: 64px;
 }
 
+/* Form label styling */
 label {
     font-size: 12px;
     font-family: sans-serif;
     font-weight: bold;
 }
 
+/* Input field styling */
 input {
     margin-bottom: 16px;
     width: 200px;
     height: 20px;
     border-radius: 3px;
     border-style: solid;
-    border-color: #EFF0F3;
+    border-color: #EFF0F3; /* Light border color */
 }
 
+/* Add focus effect to input fields */
 input:focus {
     box-shadow: 2px 2px lightgray;
 }
 
+/* Validation styling - red border for invalid password */
 #password:invalid {
     border: 2px solid red;
 }
+
+/* Validation styling - red border for invalid password confirmation */
 #confirm:invalid {
     border: 2px solid red;
 }
 
+/* Validation styling - red border for invalid phone number */
 #phonenumber:invalid {
     border: 2px solid red;
 }
 
+/* Submit button styling */
 #createButton {
     border-radius: 5px;
-    background-color: #755158;
+    background-color: #755158; /* Burgundy color */
     color: white;
     font-weight: bold;
     padding: 10px;
     text-align: center;
     width: 175px;
-    border:none;
-    cursor:pointer;
+    border: none;
+    cursor: pointer; /* Pointer cursor on hover */
 }
 
+/* Link styling */
 a {
     text-decoration: none;
-    color: #755158;
+    color: #755158; /* Match button color */
 }
