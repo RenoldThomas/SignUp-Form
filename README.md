@@ -41,6 +41,9 @@ This project creates a visually appealing signup form that includes:
 - Form submission handling
 - Account creation confirmation screen
 
-## Credits
+## Author
+Renold T (@renold)
 
+## Credits
+This project was created as part of The Odin Project curriculum (2021).
 Background photo by Halie West on Unsplash
